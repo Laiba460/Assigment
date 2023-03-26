@@ -92,3 +92,18 @@ label.logo {
 img{
    width: 100%;
 }
+.parent{
+    border: 3px solid black;
+    background-color: burlywood;
+}
+.item h1{
+    text-align: center;
+    padding-top: 10px;
+}
+.item p{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
