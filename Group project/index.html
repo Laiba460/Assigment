@@ -1,17 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
+    
 </head>
-
 <body>
-
+    
     <header>
         <nav>
             <input type="checkbox" id="check">
@@ -22,26 +20,34 @@
             <ul>
                 <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Product Details</a></li>
+                <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Feedback</a></li>
             </ul>
         </nav>
     </header>
-    <img src="https://img.freepik.com/premium-psd/sport-sneakers-shoes-sale-social-media-instagram-post-facebook-web-banner-template_70055-897.jpg?w=996"
-        alt="">
-    <div class="parent">
-        <div class="item">
-            <h1>About</h1>
-            <p>You can sell shoes online from your own store built with a platform like Shopify, on third-party
-                marketplaces like Amazon and eBay, and on social media sites like Instagram and Facebook. There are also
-                niche marketplaces for shoes, like StockX and GOAT. You can also sell shoes wholesale to other
-                businesses. You can also sell shoes in your own retail store, in another retail store, to consignment
-                shops, and at markets and events.</p>
-        </div>
-    </div>
    
 
-</body>
+  <img class="mySlides" src="https://img.freepik.com/premium-psd/sport-sneakers-shoes-sale-social-media-instagram-post-facebook-web-banner-template_70055-897.jpg?w=996">
+  <img class="mySlides" src="https://img.freepik.com/premium-psd/shoe-sale-facebook-cover-template-banner_555512-235.jpg?size=626&ext=jpg&ga=GA1.2.708907695.1679794745&semt=sph">
+<img class="mySlides" src="https://img.freepik.com/premium-vector/footwear-set_87720-629.jpg?size=626&ext=jpg&ga=GA1.2.708907695.1679794745&semt=sph">
+<script>
+var myIndex = 0;
+carousel();
 
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
 </html>

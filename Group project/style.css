@@ -1,4 +1,4 @@
-* { 
+﻿* { 
     padding: 0;
     margin: 0; 
    text-decoration: none; 
@@ -14,7 +14,7 @@ nav {
     width: 100%; 
 } 
 label.logo { 
-    color: white; 
+    color:white; 
    font-size: 35px; 
     line-height: 80px; 
     padding: 0 100px; 
@@ -30,14 +30,14 @@ nav ul li {
    margin: 0 5px; 
 } 
 nav ul li a { 
-    color: darkblue; 
+    color: red; 
     font-size: 17px; 
    padding: 7px 13px; 
     border-radius: 3px; 
    text-transform: uppercase; 
 } 
 a.active,a:hover { 
-   background: #1b9bff; 
+   background-color: white; 
     transition: .3s; 
 } 
 .checkbtn { 
@@ -92,18 +92,37 @@ label.logo {
 img{
    width: 100%;
 }
-.parent{
-    border: 3px solid black;
-    background-color: burlywood;
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-.item h1{
-    text-align: center;
-    padding-top: 10px;
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: saddlebrown;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-.item p{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-right: 40px;
-    padding-left: 40px;
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: saddlebrown;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
